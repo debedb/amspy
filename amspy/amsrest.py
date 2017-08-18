@@ -126,6 +126,12 @@ def delete_contentkey_authorization_policy_options(access_token, oid):
     path = '/ContentKeyAuthorizationPolicyOptions'
     return helper_delete(access_token, oid, path)
 
+# delete_media_job(access_token, oid)
+# delete a media job
+def delete_media_job(access_token, oid):
+    path = '/Jobs'
+    return helper_delete(access_token, oid, path)
+
 # delete_media_asset(access_token, oid)
 # delete a media asset
 def delete_media_asset(access_token, oid):
